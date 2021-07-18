@@ -1,8 +1,9 @@
-const loginInput = document.querySelector(".login-form input");
-const loginButton = document.querySelector(".login-form button");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
 function onLoginBtnClick() {
-  console.log("Hello", loginInput.value);
+  const username = loginInput.nodeValue;
+  console.log(username);
 }
 
 loginButton.addEventListener("click", onLoginBtnClick);
